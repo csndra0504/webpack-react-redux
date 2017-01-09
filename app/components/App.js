@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import { Link } from 'react-router';
+import { IndexLink, Link } from 'react-router';
 import { footer } from '../styles/footer.scss';
 
 const App = ({ children }) =>
@@ -7,9 +7,10 @@ const App = ({ children }) =>
         <h1>CH Test Project</h1>
         { children }
         <footer className={footer}>
-          <Link to="/">Filterable Table</Link>
-          <Link to="/about">About</Link>
-          <Link to="/new/1">New Route</Link>
+          <IndexLink to="/" activeStyle={{ color: 'red' }}>Filterable Table</IndexLink>
+          <Link to="/about" activeStyle={{ color: 'red' }}>About</Link>
+          <Link to="/about/lower" activeStyle={{ color: 'red' }}>About</Link>
+          <Link to="/new/1" activeStyle={{ color: 'red' }}>New Route</Link>
         </footer>
     </div>;
 
