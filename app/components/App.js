@@ -8,7 +8,8 @@ const App = ({ children }) =>
         { children }
         <footer className={footer}>
             <Link to="/">Filterable Table</Link>
-            <Link to="/about">About</Link>
+          <Link to="/about">About</Link>
+          <Link to="/new">New Route</Link>
         </footer>
     </div>;
 
