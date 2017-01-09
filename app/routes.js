@@ -10,5 +10,6 @@ export default (
 		<IndexRoute component={FilterableTable} />
 		<Route path="/about" component={About} />
 		<Route path="/new" component={New} />
+		<Route path="/new/:id" component={New} />
 	</Route>
 );

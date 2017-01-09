@@ -4,12 +4,12 @@ import { footer } from '../styles/footer.scss';
 
 const App = ({ children }) =>
     <div>
-        <h1>Filter table</h1>
+        <h1>CH Test Project</h1>
         { children }
         <footer className={footer}>
-            <Link to="/">Filterable Table</Link>
+          <Link to="/">Filterable Table</Link>
           <Link to="/about">About</Link>
-          <Link to="/new">New Route</Link>
+          <Link to="/new/1">New Route</Link>
         </footer>
     </div>;
 
